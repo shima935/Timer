@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp.techacademy.kumiko.shima.timer.MainActivity">
+
+
+    <?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="380dp"
+        android:layout_height="490dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        tools:context="jp.techacademy.kumiko.shima.timer.MainActivity"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="70dp"
+            android:text="0.0"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pause_button"
+            android:layout_alignBottom="@+id/pause_button"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="11dp"
+            android:text="Button"
+            tools:text="再生" />
+
+        <Button
+            android:id="@+id/pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/timer"
+            android:layout_below="@+id/timer"
+            android:layout_marginTop="35dp"
+            android:text="Button"
+            tools:text="一時停止" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            tools:text="リセット"
+            android:layout_alignBaseline="@+id/start_button"
+            android:layout_alignBottom="@+id/start_button"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
