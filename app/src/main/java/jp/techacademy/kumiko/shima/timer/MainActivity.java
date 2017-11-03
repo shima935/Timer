@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
 
         mTimerText = (TextView) findViewById(R.id.timer);
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             mTimer.schedule(new TimerTask() {
                 @Override
                 public void run() {
-                    mTimerSec += 0.1; //タイマー処理
+                    mTimerSec += 0.1;
 
                     mHandler.post(new Runnable() {
                         @Override
